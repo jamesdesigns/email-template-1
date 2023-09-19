@@ -10,8 +10,13 @@
   <title>Email Template 1</title>
 
   <style type="text/css">
-    @media only screen and (max-width: 600px)  {}
-    @media only screen and (max-width: 400px)  {}
+    @media only screen and (max-width: 600px)  {
+      table { width: 100%; }
+      .container { width: 100%; }
+      img { width: 100%; }
+      .container { display: flex; flex-direction: column; height: auto;}
+    }
+    @media only screen and (max-width: 400px)  { }
   </style>    
 </head>
 <body style="margin:0; padding:0; background-color:#F2F2F2;font-family:Arial, Helvetica, sans-serif;">
@@ -130,7 +135,7 @@
       <tr>
         <td align="center" valign="top">
     
-          <table width="600" height="200" cellpadding="30" cellspacing="0" border="0" class="container">
+          <table width="600" height="200" cellpadding="30" cellspacing="0" border="0" class="container flex-mobile">
             <tr>
               <td width="300" class="mobile" align="left" valign="top">
                 <img src="http://placehold.it/320x300" width="250" height="250" alt="" />              </td>
